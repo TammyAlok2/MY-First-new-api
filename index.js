@@ -43,9 +43,15 @@ newspapers.forEach(newspaper =>{
         res.json(articles)
         }).catch((err)=>console.log(err))
     })
+app.get('/',(req,res)=>{
+    req.json({
+        success : "true",
+        name:"Alok tamrakar",
+        use:"Welcome to my api to get new (/news)",
+})
+})
 
-
-app.get('/', (req, res) => {
+app.get('/news', (req, res) => {
  res.json(articles)
 })
 app.get('/news/:newspaperId',async(req,res)=>{
