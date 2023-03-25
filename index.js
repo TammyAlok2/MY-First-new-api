@@ -44,16 +44,6 @@ newspapers.forEach(newspaper =>{
         }).catch((err)=>console.log(err))
     })
 
-
-
-
-app.get('/', (req, res) => {
-  res.json({
-    success: 'true',
-    name: 'ankita gupta'
-  })
-  console.log('hello ankita love you so much')
-})
 app.get('/news', (req, res) => {
  res.json(articles)
 })
