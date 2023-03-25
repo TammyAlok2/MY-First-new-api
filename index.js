@@ -47,7 +47,7 @@ app.get('/',(req,res)=>{
     req.json({
         success : "true",
         name:"Alok tamrakar",
-        use:"Welcome to my api to get new (/news)",
+        use:"Welcome to my api to get news (/news)",
 })
 })
 
