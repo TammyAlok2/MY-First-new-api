@@ -44,7 +44,7 @@ newspapers.forEach(newspaper =>{
         }).catch((err)=>console.log(err))
     })
 app.get('/',(req,res)=>{
-    req.json({
+    res.json({
         success : "true",
         name:"Alok tamrakar",
         use:"Welcome to my api to get news (/news)",
