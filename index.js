@@ -44,7 +44,8 @@ newspapers.forEach(newspaper =>{
         }).catch((err)=>console.log(err))
     })
 
-app.get('/news', (req, res) => {
+
+app.get('/', (req, res) => {
  res.json(articles)
 })
 app.get('/news/:newspaperId',async(req,res)=>{
